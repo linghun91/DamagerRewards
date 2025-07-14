@@ -1,0 +1,36 @@
+# DamagerRewards 怪物配置文件示例
+# 配置文件名: mob1.yml
+
+# 统计的MythicMobs插件中配置的怪物名(注意不是DISPLAY)
+MythicMobs: King
+
+# 排名奖励命令配置[控制台身份执行]
+# 系统会自动根据配置的Top奖励数量确定排名数
+# 由于兼容了PlaceholderAPI插件注册按排名识别玩家名的占位符,我们直接用占位符代替玩家名
+# 支持多指令配置：可配置单行指令或多行指令列表
+TopRewards:
+  Top1:
+    - eco give %dr_top_1% 100
+    - say 恭喜 %dr_top_1% 玩家获得100金币
+    - mm item 传说圣剑 give %dr_top_1% 1
+  Top2:
+    - mm item 优良圣剑 give %dr_top_2% 1
+  Top3:
+    - mm item 普通圣剑 give %dr_top_3% 1
+
+# 自定义生效的世界名限制
+world:
+  world1: false
+  world2: true
+
+# 自定义玩家范围限制(方块)
+Range: 50
+
+# 安慰奖励(给未获得排名奖励的参与者)
+# 只要对boss造成过伤害且在自定义范围内就算参与
+# 支持多指令配置：可配置单行指令或多行指令列表
+AllRewards:
+  all:
+    - eco give <player> 100
+    - say 由于玩家<player>参与了战斗,因此获得100金币安慰奖励
+    - mm item 安慰奖品 give <player> 1

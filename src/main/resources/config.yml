@@ -1,0 +1,19 @@
+# DamagerRewards 插件配置文件
+# 主配置文件
+
+# 是否启用调试模式
+debug: false
+
+# 语言设置
+language: zh_CN
+
+# 插件设置
+settings:
+  # 是否在控制台显示详细日志
+  verbose-logging: false
+  
+  # 是否自动保存数据
+  auto-save: true
+  
+  # 自动保存间隔(分钟)
+  save-interval: 5

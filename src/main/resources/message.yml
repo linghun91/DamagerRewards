@@ -1,0 +1,41 @@
+# DamagerRewards 消息配置文件
+# 所有插件输出的消息都在此文件中配置
+
+prefix: "&6[DamagerRewards] &f"
+
+# 插件状态消息
+plugin:
+  enabled: "${prefix}&a插件已成功启用!"
+  disabled: "${prefix}&c插件已关闭!"
+  reloaded: "${prefix}&a配置文件已重新加载!"
+  no-permission: "${prefix}&c你没有权限执行此命令!"
+
+# 配置相关消息  
+config:
+  loaded: "${prefix}&a已加载 {count} 个怪物配置文件"
+  example-created: "${prefix}&a已创建示例配置文件: {file}"
+  invalid-config: "${prefix}&c配置文件 {file} 格式错误，已跳过加载"
+
+# 排名相关消息
+ranking:
+  no-data: "${prefix}&c暂无排名数据"
+  top-player: "${prefix}&e第{rank}名: &a{player} &f- &b{damage} 伤害"
+  
+# 奖励相关消息  
+reward:
+  top-reward: "${prefix}&6恭喜 &a{player} &6获得第{rank}名奖励!"
+  participation-reward: "${prefix}&6感谢 &a{player} &6的参与，获得参与奖励!"
+  reward-executed: "${prefix}&a奖励命令已执行: {command}"
+
+# 错误消息
+error:
+  mythicmobs-not-found: "${prefix}&c未找到MythicMobs插件，部分功能将无法使用!"
+  placeholderapi-not-found: "${prefix}&c未找到PlaceholderAPI插件，占位符功能将无法使用!"
+  command-failed: "${prefix}&c命令执行失败: {command}"
+  internal-error: "${prefix}&c内部错误: {error}"
+
+# 命令帮助
+help:
+  header: "${prefix}&6=== DamagerRewards 帮助 ==="
+  reload: "&e/dr reload &f- &7重新加载配置文件"
+  footer: "${prefix}&6===================="

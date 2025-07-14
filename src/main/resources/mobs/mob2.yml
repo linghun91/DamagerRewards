@@ -1,0 +1,27 @@
+# DamagerRewards 怪物配置文件示例
+# 配置文件名: mob2.yml
+
+# 统计的MythicMobs插件中配置的怪物名(注意不是DISPLAY)
+MythicMobs: Dragon
+
+# 排名奖励命令配置[控制台身份执行]
+# 系统会自动根据配置的Top奖励数量确定排名数
+TopRewards:
+  Top1: mm item 龙之圣剑 give %dr_top_1% 1
+  Top2: mm item 龙之护甲 give %dr_top_2% 1
+  Top3: mm item 龙之头盔 give %dr_top_3% 1
+  Top4: mm item 龙之药水 give %dr_top_4% 3
+  Top5: mm item 龙之宝石 give %dr_top_5% 2
+
+# 自定义生效的世界名限制
+world:
+  world: true
+  world_nether: true
+  world_the_end: false
+
+# 自定义玩家范围限制(方块)
+Range: 100
+
+# 安慰奖励(给未获得排名奖励的参与者)
+AllRewards:
+  all: mm item 龙鳞片 give <player> 2
